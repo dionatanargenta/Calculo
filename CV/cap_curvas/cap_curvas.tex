@@ -186,12 +186,67 @@ s(t)=\int_{a}^{t}\|\vec{r}\!~'(\tau)\|d\tau,\qquad a\leq t\leq b.
 \end{equation}
 
 \subsection*{Exercícios resolvidos}
-
+%Boa tarde, professor. Eu sou o Dionatan, e editei essa parte dos exercícios resolvidos. Não encontrei o local em que estão os packages utilizados no documento, então vou deixar aqui, em forma de comentário, alguns novos comandos que utilizei, que podem não ter sido usados no documento.
+%\newcommand{\limite}{\displaystyle\lim}
+%\newcommand{\integral}{\displaystyle\int}
+%\newcommand{\derivadax}{\dfrac{dx(t)}{dt}}
+%\newcommand{\derivaday}{\dfrac{dy(t)}{dt}}
+%\newcommand{\derivadaz}{\dfrac{dz(t)}{dt}}
+%\DeclareMathOperator{\sen}{sen}
+\textbf{EXERCÍCIOS RESOLVIDOS:}\\
+E.2.2.1: Calcule o comprimento do arco da hélice circular de equação: 
+\begin{equation*}
+	\vec{r}(t)=\cos\,(t)+\sen\,(t)\vec{j}+t\vec{k}
+\end{equation*}
+ do ponto $(1,\,0,\,0)$ até o ponto $(1,\,0,\,2\pi).$\\
+Conforme o item 2.6, sendo s o comprimento do arco solicitado, temos:
+\begin{equation*}
+	\vec{s}(t)=\integral_a^t{\vert\vert\vec{r'}(k)\ \vert\vert}\,dk
+\end{equation*}
+Sendo assim, devemos determinar o vetor $\vec{r'}(t)$, que será:
+\begin{equation*}
+	\vec{r'}(t)=-\sen\,(t)\vec{i}+\cos\,(t)\vec{j}+\vec{k}
+\end{equation*}
+\begin{equation*}
+	\vert\vert\vec{r'}(t)\vert\vert=\sqrt{(-\sen\,(t))^2+(\cos\,(t))^2+1^2}=\sqrt{2}
+\end{equation*}
+Percebemos que, para esta situação, o arco é descrito para $0 \leq t \leq 2\pi$. Portanto:
+\begin{equation*}
+	L=\integral_a^t{\vert\vert\vec{r'}(k)\ \vert\vert}\,dk=\integral_0^{2\pi}\sqrt{2}\,dk=2\sqrt{2}\pi\,\text{u.c}
+\end{equation*}
+E.2.2.2: Encontre o comprimento da curva $r(t)=(2t^2-1,\,4t^2+3),\,t\in [-4, 4].$\\
+Teremos, conforme mostrado no item 2.6, e sendo s o comprimento do arco:
+\begin{equation*}
+	\vec{s}(t)=\integral_a^t{\vert\vert\vec{r'}(k)\ \vert\vert}\,dk
+\end{equation*}
+Reescrevendo a curva r(t), teremos:
+\begin{equation*}
+	\vec{r}(t)=(2t^2-1)\vec{i}+(4t^2+3)\vec{j}
+\end{equation*}
+Então $\vec{r'}(t)$ será:
+\begin{equation*}
+	\vec{r'}(t)=4t\vec{i}+8t\vec{j}
+\end{equation*}
+\begin{equation*}
+	\vert\vert\vec{r'}(t)\vert\vert=\sqrt{(4t)^2+(8t)^2}=\sqrt{16t^2+64t^2}=\sqrt{80t^2}=4\sqrt{5}t
+\end{equation*}
+Com isso, obeteremos:
+\begin{equation*}
+	\vec{s}(t)=\integral_{-4}^4{4\sqrt{5}t\,dk}=4\sqrt{5}\left[\left(\dfrac{4^2}{2}\right)-\left(\dfrac{(-4)^2}{2}\right)\right]=0\,\text{u.c}
+\end{equation*}
 \construirExeresol
 
 
 \subsection*{Exercícios}
-
+E.2.2.1: Encontre o comprimento da curva:
+\begin{enumerate}
+    \item $\vec{r}(t)=(\cos\,(t)+t\sen\,(t))\vec{i}+(\sen\,(t)-t\cos\,(t))\vec{j},\, t\in [0, \pi];$
+    \item $\vec{r}(t)=\sqrt{2}t\vec{i}+\sqrt{2}t\vec{j}+(1-t^2)\vec{k},\,de\,(0, 0, 1)\,a\,(\sqrt{2},\sqrt{2},0);$
+    \item $\vec{r}(t)=t^2\vec{i}+(\sen\,(t)-\cos\,(t))\vec{j}+(\cos\,(t)+t\sen\,(t))\overrightarrow{k},\,t\in [-10, 10];$
+    \item $\vec{r}(t)=t\vec{i}+t^2\vec{j}+\dfrac{2t^3}{3}\overrightarrow{k},\,t\in [0, 1];$
+    \item $\vec{r}(t)=e^t\vec{i}+e^t\cos\,(t)\vec{j}+e^t\sen\,(t)\vec{k},\,t\in [0, 2\pi].$
+\end{enumerate}
+E.2.2.2: Calcule o comprimento da curva C: $x(t)=e^t-t, y(t)=4e^{t/2}$, quando o parâmetro t varia no intervalo [-1, 1].
 \construirExer
 
 
