@@ -575,6 +575,62 @@ Podemos, agora, explorar diversos casos particular:
 
 
 \subsection*{Exercícios resolvidos}
+%Boa tarde, professor. Adicionei um exercício resolvido e utilizei os seguintes packages:
+%\newcommand{\limite}{\displaystyle\lim}
+%\newcommand{\integral}{\displaystyle\int}
+%\newcommand{\derivadax}{\dfrac{dx(t)}{dt}}
+%\newcommand{\derivaday}{\dfrac{dy(t)}{dt}}
+%\newcommand{\derivadaz}{\dfrac{dz(t)}{dt}}
+%\DeclareMathOperator{\sen}{sen}
+%\newcommand{\vetor}{\vec{r}(t)}
+%\newcommand{\derivadar}{\vec{r'}(t)}
+%\newcommand{\vetori}{\vec{i}}
+%\newcommand{\vetorj}{\vec{j}}
+%\newcommand{\vetork}{\vec{k}}
+%\newcommand{\tangente}{\vec{T'}(t)}
+%\newcommand{\normal}{\vec{N}(t)}
+%\newcommand{\curva}{\vec{k}(t)}
+%\newcommand{\tamanhotan}{\vert\vert\tangente\vert\vert}
+%\newcommand{\tamanhovetor}{\vert\vert\vetor\vert\vert}
+E.2.4.1: Calcule a curvatura, raio de curvatura e torção para a seguinte curva:
+\begin{enumerate}
+\item $\vetor=t\vetori+\dfrac{t^2}{2}\vetorj+t^2\vetork$. Conforme o item 2.7:
+	\begin{equation*}
+	\tangente=\dfrac{\vetor}{\vert\vert\vetor\vert\vert}=\dfrac{\vetori+t\vetorj+2t\vetork}{\sqrt{(1^2+t^2+(2t)^2}}=\dfrac{1}{\sqrt{1+5t^2}}(1, t, 2t)
+	\end{equation*}
+	Logo, para $t_0=2$, teremos:
+	\begin{equation*}
+		\vec{r}(2)=\sqrt{(2t)^2+1}=\sqrt{4t^2+1}=\sqrt{4\cdot2^2+1}=\sqrt{17}
+	\end{equation*}
+	Além disso, o vetor tangente será:	
+	\begin{equation*}
+		\vec{T}(t)=\dfrac{2t\vetori+\vetork}{\sqrt{(2t)^2+1^2}}=\dfrac{2t}{\sqrt{4t^2+1}}\vetori+\dfrac{1}{\sqrt{4t^2+1}}\vetork
+	\end{equation*}
+	Então, teremos que:
+	\begin{equation*}
+		\tangente=\left(2t\cdot(4t^2+1)^{-\frac{1}{2}}\right)'\vetori+\left((4t^2+1)^{-\frac{1}{2}}\right)'\vetork
+	\end{equation*}
+	\begin{equation*}
+		\tangente=\left(2t\cdot-\dfrac{8t}{2\sqrt{(4t^2+1)^3}}+\dfrac{2}{\sqrt{4t^2+1}}\right)\vetori-\dfrac{4t}{\sqrt{(4t^2+1)^3}}\vetork
+	\end{equation*}	
+	\begin{equation*}
+		\tangente=\left(-\dfrac{8t^2}{\sqrt{(4t^2+1)^3}}+\dfrac{2}{\sqrt{4t^2+1}}\right)\vetori-\dfrac{4t}{\sqrt{(4t^2+1)^3}}\vetork
+	\end{equation*}		
+	\begin{equation*}
+		\vec{T'}(2)=\left(-\dfrac{8\cdot2^2}{\sqrt{(4\cdot2^2+1)^3}}+\dfrac{2}{\sqrt{4\cdot2^2+1}}\right)\vetori-\dfrac{4\cdot2}{\sqrt{(4\cdot2^2+1)^3}}\vetork
+	\end{equation*}
+	Substituindo no ponto indicado no enunciado:
+	\begin{equation*}
+		\vec{T'}(2)=\left(-\dfrac{8\cdot2^2}{\sqrt{(4\cdot2^2+1)^3}}+\dfrac{2}{\sqrt{4\cdot2^2+1}}\right)\vetori-\dfrac{4\cdot2}{\sqrt{(4\cdot2^2+1)^3}}\vetork
+	\end{equation*}
+	\begin{equation*}
+		\vec{T'}(2)=\left(-\dfrac{32}{\sqrt{17^3}}+\dfrac{2}{\sqrt{17}}\right)\vetori-\dfrac{8}{\sqrt{17^3}}\vetork=\dfrac{2}{\sqrt{17^3}}\vetori-\dfrac{8}{\sqrt{17^3}}\vetork
+	\end{equation*}
+	Portanto, teremos que:
+	\begin{equation*}
+		\vec{k}(2)=\dfrac{\tamanhotan}{\tamanhovetor}=\dfrac{\sqrt{\left(\dfrac{2}{\sqrt{17^3}}\right)^2+\left(\dfrac{-8}{\sqrt{17^3}}\right)^2}}{\sqrt{17}}=\dfrac{\sqrt{\left(\dfrac{4}{17^2}\right)}}{\sqrt{17}}=\dfrac{\dfrac{2}{17}}{\sqrt{17}}=\dfrac{2}{17\sqrt{17}}
+	\end{equation*}
+\end{enumerate}
 
 \construirExeresol
 
@@ -662,7 +718,52 @@ Como você interpreta os casos a e b? As curvas dos ítens c e g possuem pontos 
 \begin{resp}
  $\rho_{min}= \frac{a^2}{b}$ e $\rho_{max}= \frac{b^2}{a}$. Quando $a=b$, a elipse é uma circuferência e o raio de curvatura é constante igual a $a=b$. $a=100m$ e $b=200m$. 
 \end{resp}
+%Adicionei estes dois exercícios abaixo.
+E.2.4.9: Calcule a curvatura, raio de curvatura e torção para a seguinte curva:
+\begin{enumerate}
+\item $\vetor=t\vetori+\dfrac{t^2}{2}\vetorj+t^2\vetork$. Conforme o item 2.7:
+	\begin{equation*}
+	\tangente=\dfrac{\vetor}{\vert\vert\vetor\vert\vert}=\dfrac{\vetori+t\vetorj+2t\vetork}{\sqrt{(1^2+t^2+(2t)^2}}=\dfrac{1}{\sqrt{1+5t^2}}(1, t, 2t)
+	\end{equation*}
+	Logo, para $t_0=2$, teremos:
+	\begin{equation*}
+		\vec{r}(2)=\sqrt{(2t)^2+1}=\sqrt{4t^2+1}=\sqrt{4\cdot2^2+1}=\sqrt{17}
+	\end{equation*}
+	Além disso, o vetor tangente será:	
+	\begin{equation*}
+		\vec{T}(t)=\dfrac{2t\vetori+\vetork}{\sqrt{(2t)^2+1^2}}=\dfrac{2t}{\sqrt{4t^2+1}}\vetori+\dfrac{1}{\sqrt{4t^2+1}}\vetork
+	\end{equation*}
+	Então, teremos que:
+	\begin{equation*}
+		\tangente=\left(2t\cdot(4t^2+1)^{-\frac{1}{2}}\right)'\vetori+\left((4t^2+1)^{-\frac{1}{2}}\right)'\vetork
+	\end{equation*}
+	\begin{equation*}
+		\tangente=\left(2t\cdot-\dfrac{8t}{2\sqrt{(4t^2+1)^3}}+\dfrac{2}{\sqrt{4t^2+1}}\right)\vetori-\dfrac{4t}{\sqrt{(4t^2+1)^3}}\vetork
+	\end{equation*}	
+	\begin{equation*}
+		\tangente=\left(-\dfrac{8t^2}{\sqrt{(4t^2+1)^3}}+\dfrac{2}{\sqrt{4t^2+1}}\right)\vetori-\dfrac{4t}{\sqrt{(4t^2+1)^3}}\vetork
+	\end{equation*}		
+	\begin{equation*}
+		\vec{T'}(2)=\left(-\dfrac{8\cdot2^2}{\sqrt{(4\cdot2^2+1)^3}}+\dfrac{2}{\sqrt{4\cdot2^2+1}}\right)\vetori-\dfrac{4\cdot2}{\sqrt{(4\cdot2^2+1)^3}}\vetork
+	\end{equation*}
+	Substituindo no ponto indicado no enunciado:
+	\begin{equation*}
+		\vec{T'}(2)=\left(-\dfrac{8\cdot2^2}{\sqrt{(4\cdot2^2+1)^3}}+\dfrac{2}{\sqrt{4\cdot2^2+1}}\right)\vetori-\dfrac{4\cdot2}{\sqrt{(4\cdot2^2+1)^3}}\vetork
+	\end{equation*}
+	\begin{equation*}
+		\vec{T'}(2)=\left(-\dfrac{32}{\sqrt{17^3}}+\dfrac{2}{\sqrt{17}}\right)\vetori-\dfrac{8}{\sqrt{17^3}}\vetork=\dfrac{2}{\sqrt{17^3}}\vetori-\dfrac{8}{\sqrt{17^3}}\vetork
+	\end{equation*}
+	Portanto, teremos que:
+	\begin{equation*}
+		\vec{k}(2)=\dfrac{\tamanhotan}{\tamanhovetor}=\dfrac{\sqrt{\left(\dfrac{2}{\sqrt{17^3}}\right)^2+\left(\dfrac{-8}{\sqrt{17^3}}\right)^2}}{\sqrt{17}}=\dfrac{\sqrt{\left(\dfrac{4}{17^2}\right)}}{\sqrt{17}}=\dfrac{\dfrac{2}{17}}{\sqrt{17}}=\dfrac{2}{17\sqrt{17}}
+	\end{equation*}
+\end{enumerate}
 
+E.2.4.10: Determine a curvatura, o raio de curvatura e equação do círculo de curvatura das parábolas a seguir: 
+		\begin{enumerate}
+			\item $y=x^2-2x+2$ no ponto $(1,\,1)$.
+			\item $y=x^2-6x+11$ no ponto $(2,\,3)$.
+		\end{enumerate}
 %  {\bf Questão 8} Encontre os semi-eixos da elipse cuja curvatura máxima é $8m^{-1}$ e o semi-eixo menor é $\frac{1}{4}m$.
 % 
 % {\bf Questão 9} Um automóvel se desloca com velocidade constante sobre uma pista cuja forma é uma elipse horizontal de semi-eixos $50m$ e $200m$. Calcule a velocidade do autómovel para que a aceleração normal máxima seja $2m/s^2$. 
