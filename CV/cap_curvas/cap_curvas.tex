@@ -94,9 +94,146 @@ Assim, se $\|u\|$ for constante, a derivada à esquerda é nula e temos $\vec{u}
 
 
 \subsection*{Exercícios resolvidos}
-
+%Eu sou o Dionatan, e editei essa parte com os exercícios resolvidos. Para este capítulo, utilizei alguns comandos. Tentei encontrar a parte em que tem os packages do arquivo, porém não consegui encontrar:
+%\DeclareMathOperator{\sen}{sen}
+%\newcommand{\limite}{\displaystyle\lim}
+%\newcommand{\integral}{\displaystyle\int}
+%\newcommand{\derivada}{\dfrac{d}{dt}}
+\noindent
+\textbf{EXERCÍCIOS RESOLVIDOS:}
+\begin{flushleft}
+E.2.1.1: Determine o domínio e o valor da função vetorial em $t_0$:
+\end{flushleft}
+\begin{enumerate}
+\item $\vec{r}(t)=\sqrt{3t+1}\vec{i}+\ t^2\vec{j}$;\ $t_0=1$
+		
+Para que $\sqrt{3t+1}$ tenha solução real, é preciso que ${3t+1 \geq 0}$. Logo, $t \geq -\dfrac{1}{3}$. Já para $t^2$, é possível qualquer valor para t. Portanto, o domínio desta função vetorial é dado por $D = \left[\dfrac{-1}{3},\infty\right)\cap(-\infty,\infty)=\left[\dfrac{-1}{3}, \infty\right).$
+Agora, considerando $t_0=1$, teremos a função vetorial $\vec{r}(t)$ definida por:
+		
+\centerline{$\vec{r}(1)=2\vec{i}+\vec{j}$}
+		
+\item $\vec{r}(t)=\cos\,\left(\dfrac{\pi}{4}t\right)\vec{i}-\ln \,(3-t)\vec{j}+\sqrt{t-1}\vec{k}$; $t_0=2$
+		
+Para o argumento da função cosseno, é possível qualquer t real. Já para o logaritmo natural, seu domínio são os reais estritamente positivos. Portanto, $(3-t) > 0$, que implica em $t < 3$. Por fim, por se tratar de uma raiz quadrada, seu domínio são os reais maiores ou iguais a 0. Com isso, $(t-1) \geq 0$, logo $t \geq 1.$ Desta forma, o domínio desta função vetorial é dado por $D = (-\infty, \infty)\cap(-\infty, 3)\cap[1, \infty] = [1, 3).$
+		
+Agora, considerando $t_0=2$,\, teremos a função vetorial $\vec{r}(t)$ definida por:
+\begin{equation*}
+  \vec{r}(2)=\cos\left(\dfrac{2\pi}{4}\right)\vec{i}-\ln(3-2)\vec{j}+\sqrt{2-1}\vec{k}
+\end{equation*}
+\begin{equation*}
+		\vec{r}(2)=\vec{k}
+\end{equation*}
+\end{enumerate}
+	
+\begin{flushleft}
+		E.2.1.2: Dadas as funções $\vec{v} = \vec{i}-\,2t^2\vec{j} +\,3t^3\vec{k}\,\text{e}\, \vec{w}= t\vec{i}+\,\cos\,(t)\vec{j}+\,\sen\, (t)\vec{k}$, determine:
+\end{flushleft}	
+\begin{enumerate}
+	\item
+\begin{enumerate}
+\item $\limite_{t \to \ 0}\vec{v}(t):$ Conforme o item 2.1 do exemplo 2.1.3:
+\begin{equation*}
+	\limite_{t \to \ 0}(1\vec{i}-2t^2\vec{j} + 3t^3\vec{k})=\limite_{t \to \ 0}1\vec{i}+\limite_{t \to \ 0}-2t^2\vec{j}+\limite_{t \to \ 0} 3t^3\vec{k}
+\end{equation*}
+\begin{equation*}
+	\limite_{t \to \ 0}(\vec{i}-2t^2\vec{j} +3t^3\vec{k})=1-0+0=1
+\end{equation*}
+\item $\derivada\vec{v}(t):$ Conforme o item 2.2 do exemplo 2.1.3:
+\begin{equation*}
+	\derivada\vec{v}(t)=\derivada(\vec{i}-2t^2\vec{j}+ 3t^3\vec{k})=\derivada\vec{i}-\derivada2t^2\vec{j}+\derivada3t^3\vec{k}
+\end{equation*}
+\begin{equation*}
+	\derivada(\vec{i}-2t^2\vec{j}+ 3t^3\vec{k})=-4t\vec{j}+9t^2\vec{k}
+\end{equation*}
+\item $\derivada\vec{w}(t):$ Conforme o item 2.2 do exemplo 2.1.3:
+\begin{equation*}
+	\derivada\vec{w}(t)=\derivada(t\vec{i} + \cos\, (t)\vec{j}+ \sen\, (t)\vec{k})=\derivada(t\vec{i})+\derivada(\cos\, (t)\vec{j})+\derivada(\sen\, (t)\vec{k})
+\end{equation*}
+\begin{equation*}
+	\derivada(t\vec{i} + \cos\, (t)\vec{j}+ \sen\, (t)\vec{k})=\vec{i}-\sen\, (t)\vec{j}+\cos\, (t)\vec{k}
+\end{equation*}
+\item $\integral_0^\pi \vec{w}(t):$ Conforme o item 2.3 do exemplo 2.1.3:
+\begin{equation*}
+	\integral_0^\pi\vec{w}(t)=\integral_0^\pi(t\vec{i} + \cos\, (t)\vec{j}+ \sen\,
+	(t)\vec{k})\,dt=\integral_0^\pi{t\vec{i}\,dt}+\integral_0^\pi\cos\, (t)\vec{j}\,dt+\integral_0^\pi\sen\, 
+	(t)\vec{k}\,dt
+\end{equation*}
+\begin{equation*}
+	\integral_0^\pi(t\vec{i} + \cos\, (t)\vec{j}+ \sen\, (t)\vec{k})\,dt=\dfrac{\pi^2}{2}\vec{i}+2\vec{k}
+\end{equation*}
+\item $\integral\vec{v}(t):$ Conforme o item 2.3 do exemplo 2.1.3:
+\begin{equation*}
+	\integral\vec{v}(t)=\integral(1\vec{i}+2t^2\vec{j}+3t^3\vec{k})\,dt=\integral{1\vec{i}\,dt}+\integral 2t^2\vec{j}\,dt+\integral3t^3\vec{k}\,dt
+\end{equation*}
+\begin{equation*}
+\integral(1\vec{i}+2t^2\vec{j}+3t^3\vec{k})\,dt=t\vec{i}+\dfrac{2t^3}{3}\vec{j}+\dfrac{3t^4}{4}\vec{k}+C
+\end{equation*}		
+\item $\derivada[\vec{v}(t) \cdot \vec{w}(t)]:$ Conforme o item 4 do Teorema 2.1.1:
+\begin{equation*}
+	\derivada[\vec{v}(t)\cdot\vec{w}(t)]=\vec{v}(t)\cdot\derivada{w}(t)+\derivada{v}(t)\cdot\vec{w}(t)
+\end{equation*}
+\begin{equation*}
+	\derivada[\vec{v}(t)\cdot\vec{w}(t)]=({1\vec{i}}-2t^2\vec{j}+3t^3\vec{k})\cdot(\vec{i}-\sen (t)\vec{j}+\cos(t)\vec{k})+ (-4t\vec{j}+9t^2\vec{k})\cdot(t\vec{i}+\cos\,(t)\vec{j}+\sen\,(t)\vec{k})
+\end{equation*}
+\begin{equation*}
+	\derivada[\vec{v}(t)\cdot\vec{w}(t)]=1+2t^2\sen\,(t)+3t^3\cos\,(t)-4t\cos\,(t)+9t^2\sen\,(t)
+\end{equation*}
+\begin{equation*}
+	\derivada[\vec{v}(t)\cdot\vec{w}(t)]=1+(3t^3-4t)\cos\,(t)+11t^2\sen\,(t)
+\end{equation*}
+\item $\derivada[\vec{v}(t)\times\vec{w}(t)]:$ Conforme o item 4 do Teorema 2.1.1:
+\begin{equation*}
+	\derivada[\vec{v}(t)\times\vec{w}(t)]=\vec{v}(t)\times\derivada\vec{w}(t)+\derivada\vec{v}(t)\times\vec{w}(t)
+\end{equation*}
+\begin{equation*}
+	\derivada[\vec{v}(t)\times\vec{w}(t)]=({1\vec{i}}-2t^2\vec{j}+3t^3\vec{k})\times(\vec{i}-\sen (t)\vec{j}+\cos (t)\vec{k})+(-4t\vec{j}+9t^2\vec{k})\times(t\vec{i}+\cos\, (t)\vec{j}+\sen\,(t)\vec{k})
+\end{equation*}
+\begin{equation*}
+	\derivada[\vec{v}(t)\times\vec{w}(t)]=-\sen\,(t)\vec{k}-\cos\,(t)\vec{j}+2t^2\vec{k}-2t^2\cos\,(t)\vec{i}+3t^3\vec{j}+ 3t^3\sen\,(t)\vec{i}
+\end{equation*}
+\begin{equation*}
+	+4t^2\vec{k}-4t\sen\,(t)\vec{i}+9t^3\vec{j}-9t^2\cos\,(t)\vec{i}
+\end{equation*}
+\begin{equation*}
+	\derivada[\vec{v}(t)\times\vec{w}(t)]=(-11t^2\cos\,(t)-(4t+3t^3)\sen\,(t))\vec{i}
+	-(12t^2-\cos\,(t))\vec{j}+(6t^2-\sen\,(t))\vec{k}
+\end{equation*}
+	
+	\end{enumerate}
+\end{enumerate}
+\begin{flushleft}	
+	E.2.1.3: Determine o intercepto y da reta no espaço 2D que está representada por
+\end{flushleft} 
+\begin{equation*}
+	\vec{v}(t)=(3+2t)\vec{i}+5t\vec{j}
+\end{equation*}
+	
+\begin{flushleft}
+		Como sabemos
+\end{flushleft} 
+\begin{equation*}
+{\vec{r}(t)=x(t)\vec{i}+y(t)\vec{j}+z(t)\vec{k}}
+\end{equation*}
+\begin{flushleft}	
+	Na equação descrita acima, z(t) = 0. E, além disso, x(t) = 3 + 2t e y(t) = 5t.\ Isolando-se o t em ambas coordenadas, teremos:
+\end{flushleft} 
+\begin{equation*}
+	t = \dfrac{x-3}{2}\,\text{e}\,t = \dfrac{y}{5}
+\end{equation*}
+\begin{flushleft}
+		Isso nos permite realizar a seguinte igualdade:
+\end{flushleft}
+\begin{equation*}
+	\dfrac{x-3}{2} = \dfrac{y}{5}
+\end{equation*}
+\begin{flushleft}
+		Reescrevendo no formato da equação reduzida da reta:
+\end{flushleft}
+\begin{equation*}
+	y = \dfrac{5x}{2} - \dfrac{15}{2}
+\end{equation*}
+	Sabemos que a equação reduzida da reta é no formato y(x) = ax + b, em que b é o ponto em que a reta intercepta o eixo y. Logo, nossa resposta será o ponto $P \left(0, -\dfrac{15}{2}\right)$.
 \construirExeresol
-
 
 \subsection*{Exercícios}
 
