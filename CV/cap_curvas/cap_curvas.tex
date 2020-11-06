@@ -255,7 +255,127 @@ Das propriedades de produto vetorial, temos que $\vec{B}$, além de ortogonal a 
 
 
 \subsection*{Exercícios resolvidos}
+%Boa tarde, professor. Eu sou o Dionatan e editei essa parte dos exercícios resolvidos. Assim como nos anteriores, vou deixar comentado os packages que utilizei aqui nessa parte.
+%\newcommand{\tangente}{\vec{T}(t)}
+%\newcommand{\normal}{\vec{N}(t)}
+%\DeclareMathOperator{\sen}{sen}
+E.2.3.1: Determine o vetor tangente unitário $\vec T(t)$ e o vetor normal unitário $\vec N(t)$.
+\begin{enumerate}
+	\item $\vec r(t)=t\vec i+\dfrac{t^2}{2}\vec j+t^2\vec k$. Conforme o item 2.7:
+\begin{equation*}
+	\tangente=\dfrac{r'(t)}{\vert\vert r'(t)\vert\vert}=\dfrac{\vec i+t\vec j+2t\vec k}{\sqrt{(1^2+t^2+(2t)^2}}=\dfrac{1}{\sqrt{1+5t^2}}(1, t, 2t)
+\end{equation*}
+Agora, devemos encontrar o vetor $T'(t)$:
+\begin{equation*}
+ 	\vec T'(t)=\left(\dfrac{1}{\sqrt{1+5t^2}}\vec i\right)'+\left(\dfrac{t}{\sqrt{1+5t^2}}\vec j\right)'+\left(\dfrac{2t}{\sqrt{1+5t^2}}\vec k\right)'
+\end{equation*}
+Portanto:
+\begin{equation*}
+	\vec T'(t)=-\dfrac{5t}{(1+5t^2)^\frac{3}{2}}\vec i+\dfrac{1}{(1+5t^2)^\frac{3}{2}}\vec j+\dfrac{2}{(1+5t^2)^\frac{3}{2}}\vec k
+\end{equation*}
+Sendo assim, devemos determinar o tamanho de T'(t):
+\begin{equation*}
+	\vert\vert \vec T'(t)\vert\vert=\sqrt{\left(-\dfrac{5t}{(1+5t^2)^\frac{3}{2}}\right)^2+\left(\dfrac{1}{(1+5t^2)^\frac{3}{2}}\right)^2+\left(\dfrac{2}{(1+5t^2)^\frac{3}{2}}\right)^2}
+\end{equation*}
+\begin{equation*}
+	\vert\vert \vec T'(t)\vert\vert=\sqrt{\dfrac{25t^2}{(1+5t^2)^3}+\dfrac{1}{(1+5t^2)^3}+\dfrac{4}{(1+5t^2)^3}}
+\end{equation*}
+\begin{equation*}
+	\vert\vert \vec T'(t)\vert\vert=\dfrac{\sqrt{25t^2+5}}{(1+5t^2)^\frac{3}{2}}
+\end{equation*}
+Por fim, teremos que o vetor normal unitário será:
+\begin{equation*}
+	\normal=\dfrac{\vec T'(t)}{\vert\vert \vec T'(t)\vert\vert}=\dfrac{-\dfrac{5t}{(1+5t^2)^\frac{3}{2}}\vec i+\dfrac{1}{(1+5t^2)^\frac{3}{2}}\vec j+\dfrac{2}{(1+5t^2)^\frac{3}{2}}\vec k}{\dfrac{\sqrt{25t^2+5}}{(1+5t^2)^\frac{3}{2}}}
+\end{equation*}
+\begin{equation*}
+	\normal=\dfrac{\vec T'(t)}{\vert\vert \vec T'(t)\vert\vert}=-\dfrac{5t}{\sqrt{25t^2+5}}\vec i+\dfrac{1}{\sqrt{25t^2+5}}\vec j+\dfrac{2}{\sqrt{25t^2+5}}\vec k
+\end{equation*}
 
+\item $\vec r'(t)=3\cos\,(t)\vec i+3\,\mathrm{sen}\,(t)\vec j;\,t_0=\dfrac{\pi}{6}:$ Conforme o item 2.7:
+\begin{equation*}
+	\tangente=\dfrac{\vec r'(t)}{\vert\vert \vec r'(t)\vert\vert}=\dfrac{-3\,\sen\,(t)\vec i+3\cos\,(t)\vec j}{\sqrt{(-3\,\sen\,(t))^2+(3\cos\,(t))^2}}=-\sen\,(t)\vec i+\cos\,(t)\vec j
+\end{equation*}
+Portanto, devemos determinar o vetor T'(t):
+\begin{equation*}
+	\vec T'(t)=(-\sen(t)\vec i)'+(\cos (t)\vec j)'
+\end{equation*}
+\begin{equation*}
+	\vec T'(t)=-\cos(t)\vec i -\sen (t)\vec j
+\end{equation*}
+Sendo assim, devemos determinar o tamanho de T'(t):
+\begin{equation*}
+	\vert\vert \vec T'(t)\vert\vert=\sqrt{(-\cos(t))^2 +(-\sen (t))^2} = 1
+\end{equation*}
+Agora, o vetor normal unitário será:
+\begin{equation*}
+	\normal=\dfrac{\vec T'(t)}{\vert\vert \vec T'(t)\vert\vert}=\dfrac{-\cos\,(t)\vec i-\,\sen\,(t)\vec j}{1}=-\cos\,(t)\vec i-\,\sen\,(t)\vec j
+\end{equation*}
+Portanto, no ponto $t_0$ solicitado, o vetor tangente e o vetor normal unitários serão:
+\begin{equation*}
+	\vec{T}\left(\dfrac{\pi}{6}\right)=-\dfrac{1}{2}\vec i-\dfrac{\sqrt{3}}{2}\vec j
+\end{equation*}
+\begin{equation*}
+	\vec{N}\left(\dfrac{\pi}{6}\right)=-\dfrac{\sqrt{3}}{2}\vec i-\dfrac{1}{2}\vec j
+\end{equation*}
+\end{enumerate}
+E.2.3.2: Considere uma partícula envolvida na trajetória:
+\begin{equation*}
+	\vec r(t)=\left[t,\,2\sqrt{t},\,\dfrac{t^2}{2}\right] (m)
+\end{equation*}
+Determine, para o instante t = 1s, os vetores:
+\begin{enumerate}
+    \item\textbf{Posição:} Como dito no enunciado, o vetor $\vec r(t)$ descreve a posição da partícula ao longo do tempo. Portanto, em t = 1s, teremos:
+    \begin{equation*}
+    	\vec{r}(1)=\left[1,\,2,\,\dfrac{1}{2}\right]\,\text{m}
+    \end{equation*}
+    \item \textbf{Velocidade:} Sabemos que a velocidade é equivalente à primeira derivada da posição. Portanto, em t = 1s, teremos:
+    \begin{equation*}
+    	\vec{v}(t)=\left[1,\,\dfrac{1}{\sqrt{t}},\,t\right]\frac{m}{s}
+    \end{equation*}
+    \begin{equation*}
+    	\vec{v}(1)=\left[1,\,1,\,1\right]\frac{m}{s}
+    \end{equation*}
+    \item \textbf{Aceleração:}
+    Já a aceleração é a segunda derivada da posição, ou ainda, a primeira derivada da velocidade. Portanto, em t = 1s, teremos:
+    \begin{equation*}
+    \vec{a}(t)=\left[0,\,-\dfrac{1}{2\sqrt{t^3}},\,1\right]\frac{m}{s^2}
+    \end{equation*}
+    \begin{equation*}
+    \vec{a}(1)=\left[0,\,-\dfrac{1}{2},\,1\right]\frac{m}{s^2}
+    \end{equation*}
+\end{enumerate}
+E.2.3.3: Encontre os vetores tangente, normal e binormal para a seguinte curva:
+\begin{equation*}
+	\vec r(t)=6\cos\,(2t)\vec i+6\sen\,(2t)\vec j+5t\vec k
+\end{equation*}
+Primeiramente, vamos determinar o vetor tangente unitário, que é dado por:
+\begin{equation*}
+	\tangente=\dfrac{\vec r'(t)}{\vert\vert\vec r'(t)\vert\vert}=\dfrac{-12\sen\,(2t)\vec i+12\cos\,(2t)\vec j+5\vec k}{\sqrt{(-12\sen\,(2t))^2+(12\cos\,(2t))^2+5^2}}=\dfrac{-12\sen\,(2t)\vec i+12\cos\,(2t)\vec j+5\vec k}{\sqrt{12^2+5^2}}
+\end{equation*}
+\begin{equation*}
+	\tangente=-\dfrac{12}{13}\sen\,(2t)\vec i+\dfrac{12}{13}\cos\,(2t)\vec j+\dfrac{5}{13}\vec k
+\end{equation*}
+Agora, o vetor normal é dado por:
+\begin{equation*}
+	\normal=\dfrac{\vec{T'}(t)}{\vert\vert\vec{T'}(t)\vert\vert}=\dfrac{-\dfrac{24\cos\,(2t)}{13}\vec i-\dfrac{24\,\sen\,(2t)}{13}\vec j}{\sqrt{\left(-\dfrac{24\cos\,(2t)}{13}\right)^2+\left(-\dfrac{24\,\sen\,(2t)}{13}\right)^2}}=-\dfrac{\cos\,(2t)}{\sqrt{2}}\vec i-\dfrac{\sen\,(2t)}{\sqrt{2}}\vec j
+\end{equation*}
+Sabendo disso, o vetor binormal será:
+\begin{equation*}
+	\vec{B}(t)=\tangente\times\normal
+\end{equation*}
+\begin{equation*}
+	\vec {B}(t)=\left(-\dfrac{12}{13}\sen\,(2t)\vec i+\dfrac{12}{13}\cos\,(2t)\vec j+\dfrac{5}{13}\vec k\right)\times\left(\dfrac{-\cos\,(2t)}{\sqrt{2}}\vec i-\dfrac{\sen\,(2t)}{\sqrt{2}}\vec j\right)
+\end{equation*}
+\begin{equation*}
+	\vec {B}(t)=\dfrac{12}{13\sqrt{2}}\sen^2\,(2t)\vec k+\dfrac{12}{13\sqrt{2}}\cos^2\,(2t)\vec k-\dfrac{5}{13\sqrt{2}}\cos\,(2t)\vec j+\dfrac{5}{13\sqrt{2}}\sen\,(2t)\vec i
+\end{equation*}
+\begin{equation*}
+	\vec {B}(t)=\dfrac{5}{13\sqrt{2}}\sen\,(2t)\vec i-\dfrac{5}{13\sqrt{2}}\cos\,(2t)\vec j+\dfrac{12}{13\sqrt{2}}\vec k
+\end{equation*}
+Portanto:
+\begin{equation*}
+	\vec{B}(t)=\left(\dfrac{5}{13\sqrt{2}}\sen\,(2t),-\dfrac{5}{13\sqrt{2}}\cos\,(2t),\dfrac{12}{13\sqrt{2}}\right)
+\end{equation*}
 \construirExeresol
 
 
@@ -286,8 +406,22 @@ Esboce gráfico dessa trajetória para $0\leq t \leq 2\pi$, indicando os pontos 
 
 \begin{exer} Um erro comum entre estudantes é substituir a definição de vetor binormal unitário $\vec{B}=\vec{T}\times\vec{N}$ pela expressão espúria dada por $$\frac{\frac{d\vec{N}}{dt}}{\left\|\frac{d\vec{N}}{dt}\right\|}.$$ Calcule esta expressão para o movimento circular uniforme e verifique que ela é igual a $-\vec{T}$ e, portanto, perpendicular a $\vec{B}$.
 \end{exer}
-
-
+ %Boa tarde, professor. Adicionei estes dois últimos exercícios também.
+\begin{exer} Determine os vetores tangente e normal $  \vec T(t)  $ e $ \vec N(t) $:
+\begin{enumerate}
+    \item $\vec r(t)=2\,\sen\,(t)\vec i+5t\vec j+2\cos\,(t)\vec k$
+    \item $\vec r(t)=\sqrt{2}t\vec i+e^t\vec j+e^{-t}\vec k$
+    \item $\vec r(t)=t\vec i+\dfrac{t^2}{2}\vec j+t^2\vec k$
+    \item $\vec r(t)=t^2\vec i+(\,\sen\,(t)-\cos\,(t)) \vec j+(\cos\,(t)+t\sen\,(t))\vec k$, t > 0
+    \item $\vec r(t)=\ln{t}\vec i+t\vec j$;\,$t_0$ = e
+\end{enumerate}
+\end{exer}
+\begin{exer} A posição de uma partícula é dada por: $\vec r(t)=4\cos\,(t)\vec i+(\sqrt{2}\,\sen\,(t))\vec j$
+\begin{enumerate}
+    \item Encontre os vetores velocidade e aceleração;
+    \item Determine a reta tangente e reta normal no ponto da curva de instante $t=\dfrac{\pi}{4}$.
+\end{enumerate}
+\end{exer}
 \construirExer
 
 
